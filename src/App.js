@@ -1,23 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
-
+import { Link } from 'react-router-dom';
+import Utama from './component/Utama';
+import Navbar from './component/Navbar';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-light bg-light shadow-sm py-3  */}
+            <Navbar/>
+            <p><Utama/></p>
     </div>
   );
 }
